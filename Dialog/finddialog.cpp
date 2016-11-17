@@ -1,4 +1,12 @@
 #include <QtGui>
+#include <QLabel>
+#include <QLineEdit>
+#include <QCheckBox>
+#include <QPushButton>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
+#include <QString>
+
 #include "finddialog.h"
 
 FindDialog::FindDialog(QWidget *parent)
@@ -9,19 +17,19 @@ FindDialog::FindDialog(QWidget *parent)
     label->setBuddy(lineEdit);
 
     caseCheckBox = new QCheckBox(tr("Match &case"));
-    backwardsCheckBox = new QcheckBox(tr("Search &backward"));
+    backwardsCheckBox = new QCheckBox(tr("Search &backward"));
 
     findButton = new QPushButton(tr("&Find"));
     findButton->setDefault(true);
     findButton->setEnabled(false);
 
-    closeButton = new QPushButton(tr("CLose"));
+    closeButton = new QPushButton(tr("Close"));
 
     connect(lineEdit, SIGNAL(textChanged(const QString &)),
             this, SLOT(enableFindButton(const QString &)));
-    connect(findButton, SIGNAL(clikced()),
+    connect(findButton, SIGNAL(clicked()),
             this, SLOT(findClicked()));
-    connect(closeButton, SIGNAL(clicked),
+    connect(closeButton, SIGNAL(clicked()),
             this, SLOT(close()));
 
     QHBoxLayout *topLeftLayout = new QHBoxLayout;
@@ -65,5 +73,5 @@ void FindDialog::findClicked()
 
 void FindDialog::enableFindButton(const QString &text)
 {
-    findButton->setEnabled(!text.Empty());
+    findButton->setEnabled(!text.isNull());
 }
