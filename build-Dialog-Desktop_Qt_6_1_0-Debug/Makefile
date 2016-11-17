@@ -189,7 +189,6 @@ Makefile: ../Dialog/Dialog.pro ../../../Qt/5.7/mingw53_32/mkspecs/win32-g++/qmak
 		../../../Qt/5.7/mingw53_32/mkspecs/features/resolve_config.prf \
 		../../../Qt/5.7/mingw53_32/mkspecs/features/exclusive_builds_post.prf \
 		../../../Qt/5.7/mingw53_32/mkspecs/features/default_post.prf \
-		../../../Qt/5.7/mingw53_32/mkspecs/features/win32/console.prf \
 		../../../Qt/5.7/mingw53_32/mkspecs/features/qml_debug.prf \
 		../../../Qt/5.7/mingw53_32/mkspecs/features/win32/rtti.prf \
 		../../../Qt/5.7/mingw53_32/mkspecs/features/precompile_header.prf \
@@ -200,11 +199,13 @@ Makefile: ../Dialog/Dialog.pro ../../../Qt/5.7/mingw53_32/mkspecs/win32-g++/qmak
 		../../../Qt/5.7/mingw53_32/mkspecs/features/win32/opengl.prf \
 		../../../Qt/5.7/mingw53_32/mkspecs/features/uic.prf \
 		../../../Qt/5.7/mingw53_32/mkspecs/features/file_copies.prf \
+		../../../Qt/5.7/mingw53_32/mkspecs/features/win32/windows.prf \
 		../../../Qt/5.7/mingw53_32/mkspecs/features/testcase_targets.prf \
 		../../../Qt/5.7/mingw53_32/mkspecs/features/exceptions.prf \
 		../../../Qt/5.7/mingw53_32/mkspecs/features/yacc.prf \
 		../../../Qt/5.7/mingw53_32/mkspecs/features/lex.prf \
 		../Dialog/Dialog.pro \
+		../../../Qt/5.7/mingw53_32/lib/qtmaind.prl \
 		../../../Qt/5.7/mingw53_32/lib/Qt5Widgets.prl \
 		../../../Qt/5.7/mingw53_32/lib/Qt5Gui.prl \
 		../../../Qt/5.7/mingw53_32/lib/Qt5Core.prl
@@ -339,7 +340,6 @@ Makefile: ../Dialog/Dialog.pro ../../../Qt/5.7/mingw53_32/mkspecs/win32-g++/qmak
 ../../../Qt/5.7/mingw53_32/mkspecs/features/resolve_config.prf:
 ../../../Qt/5.7/mingw53_32/mkspecs/features/exclusive_builds_post.prf:
 ../../../Qt/5.7/mingw53_32/mkspecs/features/default_post.prf:
-../../../Qt/5.7/mingw53_32/mkspecs/features/win32/console.prf:
 ../../../Qt/5.7/mingw53_32/mkspecs/features/qml_debug.prf:
 ../../../Qt/5.7/mingw53_32/mkspecs/features/win32/rtti.prf:
 ../../../Qt/5.7/mingw53_32/mkspecs/features/precompile_header.prf:
@@ -350,11 +350,13 @@ Makefile: ../Dialog/Dialog.pro ../../../Qt/5.7/mingw53_32/mkspecs/win32-g++/qmak
 ../../../Qt/5.7/mingw53_32/mkspecs/features/win32/opengl.prf:
 ../../../Qt/5.7/mingw53_32/mkspecs/features/uic.prf:
 ../../../Qt/5.7/mingw53_32/mkspecs/features/file_copies.prf:
+../../../Qt/5.7/mingw53_32/mkspecs/features/win32/windows.prf:
 ../../../Qt/5.7/mingw53_32/mkspecs/features/testcase_targets.prf:
 ../../../Qt/5.7/mingw53_32/mkspecs/features/exceptions.prf:
 ../../../Qt/5.7/mingw53_32/mkspecs/features/yacc.prf:
 ../../../Qt/5.7/mingw53_32/mkspecs/features/lex.prf:
 ../Dialog/Dialog.pro:
+../../../Qt/5.7/mingw53_32/lib/qtmaind.prl:
 ../../../Qt/5.7/mingw53_32/lib/Qt5Widgets.prl:
 ../../../Qt/5.7/mingw53_32/lib/Qt5Gui.prl:
 ../../../Qt/5.7/mingw53_32/lib/Qt5Core.prl:

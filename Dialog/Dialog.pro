@@ -1,13 +1,13 @@
 QT += core
-QT -= gui
+QT += gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
 
 TARGET = Dialog
-CONFIG += console
-CONFIG -= app_bundle
+CONFIG -= console
+CONFIG += app_bundle
 
 TEMPLATE = app
 
