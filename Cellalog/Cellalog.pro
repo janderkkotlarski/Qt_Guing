@@ -16,8 +16,10 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    gotocelldialog.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    gotocelldialog.h
 
 FORMS    += mainwindow.ui
