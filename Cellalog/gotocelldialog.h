@@ -1,11 +1,13 @@
 #ifndef GOTOCELLDIALOG_H
 #define GOTOCELLDIALOG_H
 
-#include <QDialog>
+#include <QMainWindow>
 
-#include "ui_mainwindow.h"
+namespace Ui {
+  class GoToCellDialog;
+}
 
-class GoToCellDialog : public QDialog, public Ui::GoToCellDialog
+class GoToCellDialog : public QMainWindow
 {
     Q_OBJECT
 
@@ -14,6 +16,9 @@ public:
 
 private slots:
     void on_lineEdit_textChanged();
+
+private:
+    Ui::GoToCellDialog *ui;
 };
 
 #endif // GOTOCELLDIALOG_H
