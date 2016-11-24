@@ -4,3 +4,4 @@ build-*
 *.pro.user
 Qt_Duing/wget-log
 Qt_Duing/qt-opensource-linux-x64-5.7.0.run
+Bleah-*
