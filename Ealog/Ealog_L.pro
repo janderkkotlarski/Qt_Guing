@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2016-11-04T17:36:20
+# Project created by QtCreator 2016-12-01T17:30:02
 #
 #-------------------------------------------------
 
@@ -8,10 +8,8 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = Qt_Guing
+TARGET = Ealog
 TEMPLATE = app
-
-
 
 
 SOURCES += main.cpp\
